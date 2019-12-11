@@ -9,8 +9,7 @@ use Serendipias\Urn\Exceptions\InvalidUrnException;
 use Serendipias\Urn\Support\Urn;
 
 /**
- * Class UrnService
- * @package Serendipias\Urn\Services
+ * Class UrnService.
  *
  * @url https://tools.ietf.org/html/rfc8141
  */
@@ -79,8 +78,8 @@ class UrnService
                     return $item !== '' || $item !== null;
                 })
             ), function ($item) {
-            return ! empty($item);
-        });
+                return ! empty($item);
+            });
 
         return new Urn(
             sprintf(

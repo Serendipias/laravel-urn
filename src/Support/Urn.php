@@ -25,7 +25,7 @@ class Urn
     public function __get($name)
     {
         if ('urn' !== $name) {
-            return null;
+            return;
         }
 
         return $this->getUrnString();
@@ -41,7 +41,7 @@ class Urn
         $class = sprintf('\\%s\\%s', $this->namespace, ucfirst($this->getNid()));
 
         if (! class_exists($class)) {
-            return null;
+            return;
         }
 
         $class = new $class;

@@ -12,7 +12,7 @@ class UrnServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     public function boot()
     {
-        $source = realpath($raw = __DIR__.'/../config/urn.php') ?: $raw;
+        $source = realpath($raw = __DIR__ . '/../config/urn.php') ?: $raw;
         if ($this->app instanceof LaravelApplication) {
             $this->publishes([$source => config_path('urn.php')], 'urn');
         } elseif ($this->app instanceof LumenApplication) {
@@ -25,7 +25,7 @@ class UrnServiceProvider extends ServiceProvider implements DeferrableProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/urn.php', 'urn'
+            __DIR__ . '/../config/urn.php', 'urn'
         );
 
         $this->app->singleton(UrnService::class, function ($app) {
