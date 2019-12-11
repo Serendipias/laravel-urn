@@ -3,8 +3,7 @@
 namespace Serendipias\Urn\Contracts;
 
 /**
- * Interface UrnIdentifiable
- * @package Serendipias\Urn\Contracts
+ * Interface UrnIdentifiable.
  * @url https://tools.ietf.org/html/rfc7841#section-2
  * @url https://en.wikipedia.org/wiki/Uniform_Resource_Name
  */
