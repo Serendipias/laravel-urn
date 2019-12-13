@@ -71,6 +71,6 @@ $urn->getUrnString(); // urn:laravel:local:user:1
 **To decode a urn string:**
 ```php
 $service = app(\Serendipias\Urn\Services\UrnService::class);
-$urn = $service->decode(\App\Models\User::find(1));
+$urn = $service->decode('urn:laravel:local:user:1');
 $urn->find(); // will return User model or null if not found
 ```
