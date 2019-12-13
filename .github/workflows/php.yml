@@ -21,3 +21,7 @@ jobs:
 
     - name: Run test suite
       run: vendor/bin/phpunit
+
+    - name: Laravel PHP Insights Action
+      uses: stefanzweifel/laravel-phpinsights-action@v1.0.0
+
